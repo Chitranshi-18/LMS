@@ -55,7 +55,7 @@ WHERE lr.status = 'Approved';
 Count total approved leaves per student:
 
 
-```sql
+
 SELECT student_id, COUNT(*) AS approved_leaves
 FROM Leave_Requests
 WHERE status = 'Approved'
