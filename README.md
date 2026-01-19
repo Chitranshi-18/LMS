@@ -51,16 +51,15 @@ SELECT s.name, lr.leave_date, lr.status
 FROM Students s
 JOIN Leave_Requests lr ON s.id = lr.student_id
 WHERE lr.status = 'Approved';
+```
 
 Count total approved leaves per student:
-
-
-
+```sql
 SELECT student_id, COUNT(*) AS approved_leaves
 FROM Leave_Requests
 WHERE status = 'Approved'
 GROUP BY student_id;
-
+```
 
 ---
 
